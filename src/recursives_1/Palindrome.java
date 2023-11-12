@@ -1,12 +1,19 @@
 package recursives_1;
 
+import javax.tools.StandardJavaFileManager;
+
 public class Palindrome {
 
-    public static String palindrome(String sentence) {
-        if (sentence.length() == 20) {
-            return "k";
+    public static boolean palindrome(String sentence, int tam) {
+        if (tam == 0 || tam == 1) {
+            return true;
         } else {
-            return "ku";
+            if(sentence.charAt(sentence.length() - tam) == sentence.charAt(tam - 1)){
+                return palindrome(sentence, tam - 1);
+            }
+            else{
+                return false;
+            }
         }
     }
 
