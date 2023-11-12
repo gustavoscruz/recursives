@@ -1,6 +1,6 @@
 package recursives_1;
 
-public class DigiteCount {
+public class DigitCount {
 
     public static int digitCount(long number){
         if(number <= 9){
