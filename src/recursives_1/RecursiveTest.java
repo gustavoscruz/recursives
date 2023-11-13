@@ -2,7 +2,7 @@ package recursives_1;
 
 public class RecursiveTest {
     public static void main(String[] args){
-        int[] array = {1, 2, 3};
-        System.out.println(Palindrome.palindrome("subinoonibus", "subinoonibus".length()));
+        int[] array = {3, 2, 1};
+        System.out.println(BiggestElementArray.biggestElementArray(array, 3, 0));
     }
 }
